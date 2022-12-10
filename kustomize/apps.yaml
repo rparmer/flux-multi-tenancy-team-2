@@ -1,0 +1,14 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: apps
+  namespace: team-2
+spec:
+  interval: 10m0s
+  # serviceAccountName: team-1
+  sourceRef:
+    kind: GitRepository
+    name: team-1
+  path: ./apps
+  prune: true
+  validation: client
