@@ -5,10 +5,10 @@ metadata:
   namespace: team-2
 spec:
   interval: 10m0s
-  # serviceAccountName: team-1
+  # serviceAccountName: team-2
   sourceRef:
     kind: GitRepository
-    name: team-1
+    name: team-2
   path: ./apps
   prune: true
   validation: client
