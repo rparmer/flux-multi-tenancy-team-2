@@ -14,7 +14,7 @@ kustomization:
 	flux create kustomization team-2 \
 		--namespace=team-2 \
 		--source=team-2 \
-		# --service-account=team-2 \
+		--service-account=team-2 \
 		--path=kustomize \
 		--prune=true \
 		--interval=5m
